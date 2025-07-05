@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Element Query Demo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+      }
+      .result {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="debugContainer"
+      style="display: flex; gap: 1rem; margin-top: 1rem; min-height: 325px"
+    >
+      <div style="flex: 7">
+        <h2>Chemical Formula</h2>
+        <input id="formulaInput" placeholder="e.g. Fe2O3" />
+        <h2>Query</h2>
+        <textarea
+          id="queryInput"
+          placeholder="e.g. O and not d-block"
+        ></textarea>
+      </div>
+      <div
+        style="
+          padding: 5%;
+          flex: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div class="result" id="result" style="text-align: center"></div>
+      </div>
+    </div>
+
+    <div id="debugContainer" style="display: flex; gap: 1rem; margin-top: 1rem">
+      <div style="flex: 1">
+        <h2>Query AST</h2>
+        <pre
+          id="astDisplay"
+          style="
+            background: #f0f0f0;
+            padding: 1rem;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 300px;
+            overflow-y: auto;
+            height: 300px;
+          "
+        ></pre>
+      </div>
+      <div style="flex: 1">
+        <h2>Tokens</h2>
+        <div
+          id="tokens"
+          style="
+            font-family: monospace;
+            white-space: pre-wrap;
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+            height: 300px;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <h2>Matching Entries from table</h2>
+    <div
+      id="matchingResults"
+      style="
+        max-height: 300px;
+        overflow-y: auto;
+        background: #fafafa;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        font-family: monospace;
+      "
+    ></div>
+
+    <script type="module" src="./examplepage.js"></script>
+  </body>
+</html>

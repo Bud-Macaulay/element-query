@@ -1,0 +1,16 @@
+{
+  "name": "element-search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "sampleTest"
+  },
+  "scripts": {
+    "test": "node test/runAll.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
