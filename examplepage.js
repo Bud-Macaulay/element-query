@@ -15,7 +15,7 @@ let exampleData = [];
 
 async function loadExampleData() {
   try {
-    const response = await fetch("../example_data_mc3d.json");
+    const response = await fetch("./example_data.json");
     exampleData = await response.json();
     console.log(exampleData);
     updateTable(); // render initially if inputs exist
