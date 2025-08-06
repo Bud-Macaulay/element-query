@@ -37,9 +37,10 @@ export const PREDICATE_KEYWORDS = {
   metalloid: "isMetalloid",
 
   // Common Families
-  alkali: "isAlkali",
   "alkaline-earth": "isAlkalineEarth",
   alkalineearth: "isAlkalineEarth",
+  alkali: "isAlkali",
+
 
   transition: "isTransitionMetal",
   "transition-metal": "isTransitionMetal",
