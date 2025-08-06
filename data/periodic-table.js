@@ -451,7 +451,7 @@ const PERIODIC_TABLE = {
   // Lanthanides (usually placed separately but period 6 technically)
   La: {
     name: "Lanthanum",
-    block: "d",
+    block: "f",
     group: 3,
     period: 6,
     type: "metal",
@@ -711,7 +711,7 @@ const PERIODIC_TABLE = {
   // Actinides (period 7 f-block)
   Ac: {
     name: "Actinium",
-    block: "d",
+    block: "f",
     group: 3,
     period: 7,
     type: "metal",
